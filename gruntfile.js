@@ -115,8 +115,7 @@ module.exports = function(grunt) {
           sourceMapEmbed: true
         },
         files: {
-          'public/css/landing-page.css': 'src/css/landing-page.scss',
-          'public/lib/build.css': 'src/css/landing-page.scss'
+          'public/css/landing-page.css': 'src/css/landing-page.scss'
         }
       }
     },

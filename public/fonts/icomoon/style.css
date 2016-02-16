@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?n0ad0b');
+    src:    url('fonts/icomoon.eot?n0ad0b#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?n0ad0b') format('truetype'),
+        url('fonts/icomoon.woff?n0ad0b') format('woff'),
+        url('fonts/icomoon.svg?n0ad0b#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-around-globe:before {
+    content: "\e900";
+}
+.icon-badge-web:before {
+    content: "\e901";
+}
+.icon-clock:before {
+    content: "\e902";
+}
+.icon-crew:before {
+    content: "\e903";
+}
+.icon-dark-desk:before {
+    content: "\e904";
+}
+.icon-detail-globe:before {
+    content: "\e905";
+}
+.icon-fbo:before {
+    content: "\e906";
+}
+.icon-global-ticket:before {
+    content: "\e907";
+}
+.icon-global:before {
+    content: "\e908";
+}
+.icon-heavy-dark:before {
+    content: "\e909";
+}
+.icon-heavy-prof:before {
+    content: "\e90a";
+}
+.icon-heavyjet:before {
+    content: "\e90b";
+}
+.icon-internet:before {
+    content: "\e90c";
+}
+.icon-light-desk:before {
+    content: "\e90d";
+}
+.icon-light-globe:before {
+    content: "\e90e";
+}
+.icon-light-ticket:before {
+    content: "\e90f";
+}
+.icon-light-ticket2:before {
+    content: "\e910";
+}
+.icon-local:before {
+    content: "\e911";
+}
+.icon-one-ticket:before {
+    content: "\e912";
+}
+.icon-people:before {
+    content: "\e913";
+}
+.icon-quality-web:before {
+    content: "\e914";
+}
+.icon-search:before {
+    content: "\e915";
+}
+.icon-simple-web-badge:before {
+    content: "\e916";
+}
+.icon-ticket:before {
+    content: "\e917";
+}
+.icon-tickets:before {
+    content: "\e918";
+}
+.icon-web-app:before {
+    content: "\e919";
+}
+

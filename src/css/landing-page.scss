@@ -4,6 +4,12 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ /*
+------------------------              --------------------------
+                            GENERAL 
+------------------------              --------------------------
+ */
+
 body,
 html {
     width: 100%;
@@ -21,6 +27,12 @@ h6 {
     font-weight: 700;
 }
 
+ /*
+------------------------                  --------------------------
+                            NAVIGATION 
+------------------------                  --------------------------
+ */
+
 .topnav {
     font-size: 14px; 
 }
@@ -29,6 +41,12 @@ h6 {
     font-size: 18px;
     font-weight: 400;
 }
+
+ /*
+------------------------              --------------------------
+                            TOP-BANNER 
+------------------------              --------------------------
+ */
 
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
@@ -48,17 +66,20 @@ h6 {
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    font-size: 3em;
+    font-weight: 400;
 }
 
 .intro-divider {
-    width: 400px;
+    width: 60%;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin: 35px auto;
 }
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-weight: 200;
 }
 
 @media(max-width:767px) {
@@ -85,12 +106,25 @@ h6 {
     }
 }
 
+ul.list-inline.intro-social-buttons {
+    .icon-heavy-dark {
+        font-size: 1.5em;
+    }
+}
+
 .network-name {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
+    padding-left: 10px;
 }
+
+ /*
+------------------------                    --------------------------
+                             CONTENT 
+------------------------                    --------------------------
+ */
 
 .content-section-a {
     padding: 50px 0;
@@ -103,6 +137,12 @@ h6 {
     border-bottom: 1px solid #e7e7e7;
 }
 
+.content-section-a, .content-section-b {
+    img {
+        margin-top: 60px;
+    }
+}
+
 .section-heading {
     margin-bottom: 30px;
 }
@@ -111,6 +151,34 @@ h6 {
     float: left;
     width: 200px;
     border-top: 3px solid #e7e7e7;
+}
+
+ /*
+------------------------                       --------------------------
+                             Content Bullets
+------------------------                       --------------------------
+ */
+
+
+.content-section-b.content_bullets {
+    hr {
+        width: 0px;
+    }
+
+    span {
+        font-size: 6em;
+    }
+
+    .media-body {
+        padding-left: 20px;
+
+        .lead {
+            margin-bottom: 0px;
+        }
+    }
+
+
+
 }
 
 .banner {
