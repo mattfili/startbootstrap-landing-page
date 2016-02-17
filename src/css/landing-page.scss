@@ -38,7 +38,7 @@ h6 {
 }
 
 .navbar-default {
-    color: transparent;
+    background-color: transparent;
     border: none;
     position: absolute;
 
@@ -50,6 +50,10 @@ h6 {
 .lead {
     font-size: 18px;
     font-weight: 400;
+}
+
+ul.nav.navbar-nav.navbar-right li a {
+    color: #808080;
 }
 
  /*

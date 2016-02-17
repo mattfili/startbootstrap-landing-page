@@ -4,6 +4,12 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    'gh-pages': {
+      options: {
+        base: 'public'
+      },
+      src: ['**']
+    },
     autoprefixer: {
       main: {
         options: ['>1% in US'],
@@ -209,5 +215,12 @@ module.exports = function(grunt) {
     'connect',
     'watch'
   ]);
+
+  grunt.registerTask('host', [
+    'build-dev',
+    'gh-pages'
+  ]);
+
+
 
 };
