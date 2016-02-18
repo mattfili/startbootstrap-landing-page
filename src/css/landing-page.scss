@@ -68,18 +68,18 @@ ul.nav.navbar-nav.navbar-right li a {
     text-align: center;
     color: #f8f8f8;
     background: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.6)
     ), url(../img/airve-banner.png) no-repeat center center;
     background-size: cover;
-    max-height: 570px;
+    max-height: 550px;
     background-position: 50% 45%;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 
 .intro-message > h1 {
@@ -96,9 +96,10 @@ ul.nav.navbar-nav.navbar-right li a {
     margin: 35px auto;
 }
 
+
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-weight: 200;
+    margin-top: 35px;
 }
 
 @media(max-width:767px) {
@@ -121,7 +122,7 @@ ul.nav.navbar-nav.navbar-right li a {
     }
 
     .intro-divider {
-        width: 100%;
+        width: 60%;
     }
 }
 
