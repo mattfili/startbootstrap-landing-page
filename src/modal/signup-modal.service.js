@@ -2,10 +2,10 @@
     'use strict';
 
     angular
-		.module('airvel.modals')
+		.module('operator-landing')
 		.service('signupModalService', signupModalService);
 
-    signup.$inject = ['$rootScope', '$modal', '$q'];
+    signupModalService.$inject = ['$rootScope', '$uibModal', '$q'];
 
     function signupModalService($rootScope, $modal, $q) {
 
@@ -13,7 +13,7 @@
 
         vm.openModal = function (callback) { 
 
-            var modalInstance = $modal.open({
+            var modalInstance = $uibModal.open({
                 animation: true,
                 templateUrl: 'modal/signup-modal.html',
                 controller: 'signup-modal.controller.js',
@@ -27,7 +27,7 @@
             });
         };
 
-        vm.closeModal = function (result) {
+        vm.closeModal = function (result) { 
             if (modalInstance) {
                 modalInstance.close(result);
             }

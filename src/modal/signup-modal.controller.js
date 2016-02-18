@@ -1,9 +1,9 @@
 (function () {
     angular
-        .module("airvel.modals")
+        .module("operator-landing")
         .controller("signupModalController", signupModalController);
 
-    signupModalController.$inject = ['$scope', 'ContactUsService', 'security', 'signupModalService', '$modal', '$timeout'];
+    signupModalController.$inject = ['$scope','signupModalService','$uibModal','$timeout'];
 
     function signupModalController($scope, signupModalService, $modal, $timeout) {
         var vm = this;
@@ -35,16 +35,16 @@
         $scope.signupModalSubmit = function () {
             
             var model = signupModel(
-                $scope.firstname 
-                $scope.lastname
-                $scope.operatorname
-                $scope.position
-                $scope.email 
-                $scope.phone 
-                $scope.city 
-                $scope.state 
-                $scope.fleetcount 
-                $scope.schedulingtool
+                $scope.firstname, 
+                $scope.lastname,
+                $scope.operatorname,
+                $scope.position,
+                $scope.email,
+                $scope.phone,
+                $scope.city, 
+                $scope.state, 
+                $scope.fleetcount,
+                $scope.schedulingtool,
             );
 
             // ContactUsService.post(model).then(function () {
@@ -53,7 +53,7 @@
 
             //         signupModalService.closeModal();
 
-            });
+            // });
         };
 
     }

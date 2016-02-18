@@ -1,0 +1,50 @@
+.cd-user-modal
+
+  .cd-user-modal-container
+
+    ul.cd-switcher
+
+    h3.text-center.strong Sign Up with Airvel
+    form.cd-form(name='joinForm', ng-submit='signup()')
+      p.social-login
+        span(ng-repeat='login in security.externalLogins', class='social-login-{{login.name|lowercase}}')
+          a(ng-click='security.loginWithExternal(login,user)')
+            i.fa(class='fa-{{login.name|lowercase}}')
+            |  {{login.name}}
+      .lined-text
+        span Or
+        hr
+      p.fieldset
+        label.image-replace.cd-email(for='email') Email
+        input#email.full-width.has-padding.has-border(type='email', focus-me='true', focus-me-timeout='300', placeholder='E-mail', ng-model='user.userName', ng-pattern='pattern.email', required='')
+
+      p.fieldset
+        label.image-replace.cd-username(for='firstName')
+          i.fa.fa-scissors
+          | First Name
+        input#firstName.full-width.has-padding.has-border(type='text', placeholder='First Name', ng-model='user.firstName', required='')
+      p.fieldset
+        label.image-replace.cd-username(for='lastName') Last Name
+        input#lastName.full-width.has-padding.has-border(type='text', placeholder='Last Name', ng-model='user.lastName', required='')
+
+      p.fieldset
+        label.image-replace.cd-password(for='password') Password
+        input#password.full-width.has-padding.has-border(type='password', placeholder='Password', ng-model='user.password', required='')
+      p.fieldset
+        label.image-replace.cd-password(for='confirmPassword') Confirm Password
+        input#confirmPassword.full-width.has-padding.has-border(type='password', placeholder='Confirm Password', ng-model='user.confirmPassword', confirmpassword='user.password', required='')
+
+      button.btn.btn-lg.btn-primary.btn-block(type='submit', ng-class="{'disabled':!joinForm.$valid || joinForm.acceptTerms != true }", style='border-radius: 0px') Sign in
+      p.fieldset
+        input#accept-terms(type='checkbox', ng-model='joinForm.acceptTerms', required='')
+        label(for='accept-terms')
+          | I agree to the 
+          a(href='/terms', target='_blank') Terms
+          |  and 
+          a(href='/privacy', target='_blank') Privacy Policy
+      p.fieldset(style='color:#D8000C;')
+        | {{ erorMessage }}
+      label.signup-prompt Already have an Airvel Account?
+      p(style='display:inline')
+        a(href='/login') Login
+      a.cd-close-form(ng-click="$dismiss()")
